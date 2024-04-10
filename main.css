@@ -1,0 +1,49 @@
+:root {
+    --main: #5c5470;
+    --box: #352f44;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
+body {
+    background-color: var(--main);
+}
+
+.container {
+    background-color: var(--box);
+    border-radius: 1rem;
+    height: auto;
+}
+
+.diceContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dice {
+    font-size: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.rollDice {
+    background-color: #2a2438;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.rollHistory {
+    font-size: 1.5rem;
+}
+
+.rollHistoryDice {
+    font-size: 2rem;
+}
