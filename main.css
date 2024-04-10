@@ -13,6 +13,20 @@ body {
     background-color: var(--main);
 }
 
+@keyframes rollAnimation {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.roll-Animation {
+    animation: rollAnimation 1s;
+}
+
 .container {
     background-color: var(--box);
     border-radius: 1rem;
@@ -31,7 +45,6 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-
 
 .rollDice {
     background-color: #2a2438;

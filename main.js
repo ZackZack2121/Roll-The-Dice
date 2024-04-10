@@ -45,6 +45,14 @@ function getDiceFace (result) {
 
 rollButton.addEventListener(("click") , (e) => {
     e.preventDefault();
-    roll = rollDice();
-    diceElement.innerText = roll;
+    rollButton.setAttribute("disabled", "disabled");
+    diceElement.classList.add("roll-Animation");
+    
+    setTimeout(() => {
+        roll = rollDice();
+        diceElement.classList.remove("roll-Animation");
+        diceElement.innerText = roll;
+        rollButton.removeAttribute("disabled");
+    }, 1100);
+    
 });
